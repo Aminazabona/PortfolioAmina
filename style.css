@@ -1,0 +1,67 @@
+/* Navbar */
+
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 40px;
+  margin: 20px;
+}
+
+/* Logo */
+
+.logo{
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+  gap: 25px;
+}
+
+.logo-icon{
+  width: 14px;
+  height: 24px;
+  color: #2f80ed;
+  border-radius: 6px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  font-size:35px;
+}
+
+.logo-text{
+  color: #1f2937;
+  font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 400; /* ou 500 pour un aspect un peu plus épais */
+}
+
+/* Links */
+
+.nav-links{
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: 500;
+  transition: 0.3s;
+  font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Hover effects */
+
+.nav-links a:hover{
+  color: #2f80ed;
+}
