@@ -1,27 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio - Amina</title>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-   <header>
-  <nav class="navbar">
-    <div class="logo">
-      <span class="logo-icon"><i class="fa-solid fa-cube"></i></span>
-      <span class="logo-text">Amina</span>
-    </div>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-cube"></i></span>
+                <span class="logo-text">Amina</span>
+            </div>
 
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#Skills">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-container">
+            <div class="home-text">
+                <p class="welcome">Bienvenue sur mon portfolio !</p>
+                <h1>Bonjour, je suis <span>Amina</span></h1>
+                <p class="description">
+                    Je suis une développeuse web passionnée par la création d'applications web modernes et simples. 
+                    Je conçois des interfaces épurées et des sites web réactifs.
+                </p>
+                <div class="home-buttons">
+                    <a href="./assets/Fichiers/Amina Zabona Esther CV-1.pdf" class="btn primary">Télécharger CV</a>
+                    <a href="#" class="btn secondary">Voir mes réalisations →</a>
+                </div>
+            </div>
+
+            <div class="home-image">
+                <!-- Floating 3D shapes from the design -->
+                <div class="shape shape-1"></div> 
+                <div class="shape shape-2"></div>
+                
+                <div class="image-wrapper">
+                    <img src="./assets/images/imgport-removebg-preview.png" alt="Amina">
+                </div>
+
+                <div class="social-icons">
+                    <span class="follow-text">FOLLOW ME ON</span>
+                    <div class="line"></div>
+                    <a href="https://www.facebook.com/amina.zabona"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/Aminazabona"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.linkedin.com/in/amina-zabona-b8a997369/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
