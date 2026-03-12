@@ -505,3 +505,226 @@ transition:0.3s;
 .view-projects:hover{
 background:#2563eb;
 }
+
+/* CONTACT SECTION STYLES */
+.contact{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-section {
+    padding: 80px 0 40px;
+    background-color: transparent; /* Assumes parent has the light blue gradient */
+    font-family: sans-serif; /* Replace with your site's font */
+    color: #333;
+}
+
+.contact-section .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #2d3436;
+}
+
+.contact-header p {
+    color: #636e72;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+/* Form Styling */
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 16px 20px;
+    border: 1.5px solid #e2e8f0;
+    background: #ffffff;
+    border-radius: 12px;
+    font-size: 15px;
+    color: #1e293b;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Placeholder */
+.contact-form-container input::placeholder,
+.contact-form-container textarea::placeholder{
+    color:#94a3b8;
+}
+
+/* Focus */
+.contact-form-container input:focus,
+.contact-form-container textarea:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 4px rgba(59,130,246,0.1);
+}
+
+.btn-send-main {
+    background: #4b86e0;
+    color: white;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(75, 134, 224, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.btn-send-main:hover {
+    transform: translateY(-2px);
+}
+
+/* Info Card Styling */
+.contact-info-card{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    gap:25px;
+}
+
+.contact-info-card .info-item{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:10px 0;
+}
+
+.contact-info-card .icon{
+    width:40px;
+    height:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#eff6ff;
+    border-radius:10px;
+    color:#3b82f6;
+    font-size:18px;
+}
+
+.info-item .icon {
+    font-size: 18px;
+    color: #4b86e0;
+}
+
+.info-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #636e72;
+}
+.contact-info-card a{
+    width:40px;
+    height:40px;
+    background:white;
+    border-radius:50%;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    color:#3b82f6;
+    box-shadow:0 5px 12px rgba(0,0,0,0.08);
+    margin-right:10px;
+    transition:0.3s;
+}
+
+.contact-info-card a:hover{
+    background:#3b82f6;
+    color:white;
+    transform:translateY(-3px);
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.social-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.social-dot.fb { background: #e84393; }
+.social-dot.ig { background: #0984e3; }
+.social-dot.tw { background: #00cec9; }
+
+.btn-send-card {
+    width: 135px;
+    background: #4b86e0;
+    color: white;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(75, 134, 224, 0.3);
+    transition: transform 0.2s ease;
+}
+.btn-send-card:hover {
+    transform: translateY(-2px);
+}
+
+/* Floating Image in Card */
+.card-image-wrapper {
+    position: absolute;
+    bottom: -10px;
+    right: -20px;
+    width: 140px;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 0 0 25px 0;
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
+}
+
+.footer-copyright {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 12px;
+    color: #092d3d;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .contact-info-card {
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    .card-image-wrapper {
+        width: 100px;
+        right: 0;
+    }
+}
