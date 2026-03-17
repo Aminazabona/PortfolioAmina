@@ -40,11 +40,6 @@ header {
     color: #1a202c;
 }
 
-.logo-icon {
-    color: #3b82f6;
-    font-size: 28px;
-    margin-right: 10px;
-}
 
 .nav-links {
     list-style: none;
@@ -624,6 +619,10 @@ background:#2563eb;
     color:#3b82f6;
     font-size:18px;
 }
+infoitem{
+    display: flex;
+    
+}
 
 .info-item .icon {
     font-size: 18px;
@@ -654,6 +653,13 @@ background:#2563eb;
     color:white;
     transform:translateY(-3px);
 }
+.contact-link{
+    text-decoration:none;
+    color:#636e72;
+    margin-right:15px;
+}
+
+
 
 .social-links {
     display: flex;
@@ -671,21 +677,7 @@ background:#2563eb;
 .social-dot.ig { background: #0984e3; }
 .social-dot.tw { background: #00cec9; }
 
-.btn-send-card {
-    width: 135px;
-    background: #4b86e0;
-    color: white;
-    padding: 12px 35px;
-    border: none;
-    border-radius: 30px;
-    font-weight: 600;
-    cursor: pointer;
-    box-shadow: 0 4px 15px rgba(75, 134, 224, 0.3);
-    transition: transform 0.2s ease;
-}
-.btn-send-card:hover {
-    transform: translateY(-2px);
-}
+
 
 /* Floating Image in Card */
 .card-image-wrapper {
@@ -727,4 +719,18 @@ background:#2563eb;
         width: 100px;
         right: 0;
     }
+}
+
+.error-message{
+color:red;
+font-size:13px;
+display:block;
+margin-top:5px;
+}
+
+#successMessage{
+color:green;
+font-size:15px;
+margin-top:10px;
+font-weight:600;
 }
