@@ -20,8 +20,8 @@
     <header>
       <nav class="navbar">
         <div class="logo">
-          <span class="logo-icon"><i class="fa-solid fa-cube"></i></span>
-          <span class="logo-text">Amina</span>
+          
+          <span class="logo-text">AZ</span>
         </div>
 
         <ul class="nav-links">
@@ -207,17 +207,20 @@
         <div class="contact-wrapper">
             <!-- Left Side: Form -->
             <div class="contact-form-container">
-                <form action="#">
+                <form id="contactForm" action="#">
                     <div class="form-row">
                         <div class="form-group">
-                            <input type="text" placeholder="Nom" required>
+                            <input type="text" id="name" placeholder="Nom" required>
+                            <small class="error-message" id="nameError"></small>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Email" required>
+                            <input type="email" id="email" placeholder="Email" required>
+                            <small class="error-message" id="emailError"></small>
                         </div>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder=" Message" rows="5" required></textarea>
+                        <textarea id="message" placeholder=" Message" rows="5" required></textarea>
+                        <small class="error-message" id="messageError"></small>
                     </div>
                     <button type="submit" class="btn-send-main">Envoyer</button>
                 </form>
@@ -227,8 +230,15 @@
             <div class="contact-info-card">
                 <div class="info-content">
                     <div class="info-item">
+                      <div class="infoitem">
                         <span class="icon"><i class='bx bx-envelope'></i></span>
                         <p>aminazabona8@gmail.com</p>
+                        <span class="icon">
+                               <i class='bx bx-phone'></i>
+                              </span>
+
+                         <p>+243936738890</p>
+                      </div>
                     </div>
                     <div class="info-item">
                         <span class="icon"><i class='bx bx-map'></i></span>
@@ -247,13 +257,11 @@
             ></a>
           </div>
 
-                    <button class="btn-send-card">Envoyer</button>
+                   
+
                 </div>
                 
-                <!-- Floating Card Image -->
-                <div class="card-image-wrapper">
-                    <img src="https://via.placeholder.com/150" alt="Contact Avatar" class="card-img">
-                </div>
+                
             </div>
         </div>
     </div>
@@ -263,5 +271,8 @@
     </div>
 </section>
 <!-- CONTACT SECTION END -->
+ <script src="script.js">
+
+ </script>
   </body>
 </html>
